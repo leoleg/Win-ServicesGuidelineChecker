@@ -29,7 +29,7 @@
 $service_guideline_file = "service_security_guideline.csv"
 $security_guideline_csv_link = "https://raw.githubusercontent.com/leoleg/Win-ServicesGuidelineChecker/main/service_security_guideline.csv"
 
-if (! Test-Path $service_guideline_file)
+if (! (Test-Path $service_guideline_file))
 {
     Invoke-WebRequest $security_guideline_csv_link | Select-Object -ExpandProperty Content | Out-File $service_guideline_file
 }
