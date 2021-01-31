@@ -1,6 +1,7 @@
 # Win-ServicesGuidelineChecker
 
-Powershell scripts to check your corporate environment services on Windows Server 2016 whether they match Security Guideline GuideLine.
+Powershell scripts to check your corporate environment services on Windows Server 2016 whether they match Security Guideline.
+Those script are used for Security Hardening Windows systems.
 
 Best practices were prepared by Microsoft:
 https://docs.microsoft.com/en-us/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server.
