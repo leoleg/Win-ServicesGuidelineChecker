@@ -44,6 +44,10 @@ foreach ($service in $service_list)
     if ($service_name.Status -ne "Stopped")
     {
         Stop-Service -Name $service.'Service name' -Force
-        Write-Host("Service " + $service.'Service name' + " stopped.") -fore red
+        Set-Service -Name $service.'Service name' -StartupType Manual
+        if ($service_name.Status -eq "Stopped")
+        {
+            Write-Host("Service " + $service.'Service name' + " stopped.") -fore red
+        }
     }
 }
